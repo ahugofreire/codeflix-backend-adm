@@ -1,3 +1,4 @@
 node_modules/*
 .history/
 tsconfig.tsbuildinfo
+sample.spec.ts
