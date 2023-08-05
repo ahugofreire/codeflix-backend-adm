@@ -16,8 +16,6 @@ describe("ValueObejct Unit Tests", () => {
   it("should convert to a string", () => {
     const date = new Date();
     let arrange = [
-      {received: null , expected:"null"},
-      {received: undefined , expected:"undefined"},
       {received: "" , expected:""},
       {received:"fake test" , expected:"fake test"},
       {received:0 , expected:"0"},

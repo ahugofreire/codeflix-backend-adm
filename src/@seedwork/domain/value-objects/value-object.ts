@@ -1,8 +1,10 @@
+import { deepFreeze } from "../utils/object";
+
 export default abstract class ValueObject<Value = any> {
-    protected _value: Value;
+    protected readonly _value: Value;
 
     constructor(value: Value) {
-        this._value = value;
+        this._value = deepFreeze(value);
     }
 
     get value(): Value {
@@ -12,7 +14,7 @@ export default abstract class ValueObject<Value = any> {
     toString = () => {
         if (typeof this.value !== "object" || this.value === null) {
             try {
-               return this.value.toString();     
+               return this.value.toString();
             } catch(err) {
                 return this.value + "";
             }
