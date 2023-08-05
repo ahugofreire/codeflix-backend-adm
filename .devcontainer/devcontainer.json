@@ -39,7 +39,9 @@
 				"eamodio.gitlens",
 				"vivaxy.vscode-conventional-commits",
 				"sonarsource.sonarlint-vscode",
-        "editorconfig.editorconfig"
+        "editorconfig.editorconfig",
+        "firsttris.vscode-jest-runner",
+        "streetsidesoftware.code-spell-checker"
 			],
 			"settings": {
 				"terminal.integrated.defaultProfile.linux": "zsh"
